@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닥터뷰티 치과병원 & 피부클리닉</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+      padding: 40px 30px;
+      text-align: center;
+      border-radius: 20px 20px 0 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      margin-bottom: 10px;
+    }
+    .header .subtitle {
+      font-size: 16px;
+      color: #fff;
+      opacity: 0.95;
+      letter-spacing: 3px;
+    }
+    .intro {
+      background: white;
+      padding: 40px 30px;
+      text-align: center;
+      border-bottom: 3px solid #FFD700;
+    }
+    .intro h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .service-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 25px;
+      border-radius: 15px;
+      color: white;
+      transition: transform 0.3s;
+    }
+    .service-card:nth-child(2) {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .service-card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    .service-card ul {
+      list-style: none;
+    }
+    .service-card li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .service-card li:before {
+      content: "✓ ";
+      margin-right: 8px;
+    }
+    .form-section {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    .form-section h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    .form-section .notice {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 30px;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      border-left: 4px solid #FFD700;
+    }
+    iframe {
+      width: 100%;
+      height: 1400px;
+      border: none;
+      border-radius: 10px;
+    }
+    .footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      .header h1 { font-size: 24px; }
+      iframe { height: 1600px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>닥터뷰티치과병원</h1>
+      <p class="subtitle">DR.BEAUTY DENTAL HOSPITAL</p>
+    </div>
+    <div class="intro">
+      <h2>전문의와 함께하는 맞춤 치료</h2>
+      <p>닥터뷰티 치과병원은 치과 진료와 피부클리닉을 함께 운영하는<br>종합 의료기관입니다. 환자의 안전과 만족을 최우선으로 합니다.</p>
+      <div class="services">
+        <div class="service-card">
+          <h3>💆 피부클리닉</h3>
+          <ul>
+            <li>줄기세포 재생치료</li>
+            <li>레이저 토닝</li>
+            <li>리프팅 시술</li>
+            <li>보톡스 / 필러</li>
+            <li>기타 피부 시술</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>🦷 치과</h3>
+          <ul>
+            <li>임플란트</li>
+            <li>치아 미백</li>
+            <li>라미네이트</li>
+            <li>충치 / 일반 진료</li>
+            <li>기타 치과 진료</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="form-section">
+      <h2>📋 무료 상담 신청</h2>
+      <div class="notice">
+        ✓ 전문 상담사가 빠르게 안내해드립니다<br>
+        ✓ 상담은 완전 무료이며, 개인정보는 상담 목적으로만 사용됩니다
+      </div>
+      <iframe src="https://forms.gle/5815np1Tk5u6b6n78" frameborder="0">로딩 중...</iframe>
+    </div>
+    <div class="footer">
+      <p><strong>닥터뷰티 치과병원 & 피부클리닉</strong></p>
+      <p>환자의 안전과 만족을 최우선으로 생각합니다</p>
+    </div>
+  </div>
+</body>
+</html>
